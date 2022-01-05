@@ -48,21 +48,21 @@ SUBJECT_INDEX = {'01': '哲学', '02': '经济学', '03': '法学', '04': '教�
                 '08': '工学', '09': '农学', '10': '医学', '11': '军事学', '12': '管理学', '13': '艺术学'}
 
 CREATE_TEBLE_SQL = "CREATE TABLE `{0}` (" \
-                   "`id` char(22) PRIMARY KEY,`招生单位` varchar(40) NOT NULL," \
-                   "`院校特性` varchar(10) DEFAULT NULL," \
-                   "`院系所` varchar(100) DEFAULT NULL," \
-                   "`专业` varchar(40) DEFAULT NULL," \
-                   "`研究方向` TEXT DEFAULT NULL," \
-                   "`学习方式` varchar(30) DEFAULT NULL," \
-                   "`拟招生人数` varchar(40) DEFAULT NULL," \
-                   "`备注` TEXT DEFAULT NULL," \
-                   "`业务课一` varchar(40) DEFAULT NULL," \
-                   "`业务课二` varchar(40) DEFAULT NULL," \
-                   "`外语` varchar(40) DEFAULT NULL," \
-                   "`政治` varchar(40) DEFAULT NULL," \
-                   "`所在地` varchar(30) DEFAULT NULL," \
-                   "`指导老师` TEXT DEFAULT NULL," \
-                   "`专业代码` varchar(10) DEFAULT NULL," \
-                   "`门类` varchar(20) DEFAULT NULL," \
-                   "`一级学科` varchar(40) DEFAULT NULL)" \
+                   "`id` char(22) PRIMARY KEY,`zhaoShengDanWei` varchar(40) NOT NULL," \
+                   "`yuanXiaoTeXing` varchar(10) DEFAULT NULL," \
+                   "`yuanXiSuo` varchar(100) DEFAULT NULL," \
+                   "`zhuanYe` varchar(40) DEFAULT NULL," \
+                   "`fangXiang` TEXT DEFAULT NULL," \
+                   "`fangShi` varchar(30) DEFAULT NULL," \
+                   "`niZhaoShengRenShu` varchar(40) DEFAULT NULL," \
+                   "`beiZhu` TEXT DEFAULT NULL," \
+                   "`yeWuKeYi` varchar(40) DEFAULT NULL," \
+                   "`yeWuKeEr` varchar(40) DEFAULT NULL," \
+                   "`waiYu` varchar(40) DEFAULT NULL," \
+                   "`zhengZhi` varchar(40) DEFAULT NULL," \
+                   "`suoZaiDi` varchar(30) DEFAULT NULL," \
+                   "`daoShi` TEXT DEFAULT NULL," \
+                   "`daiMa` varchar(10) DEFAULT NULL," \
+                   "`menLei` varchar(20) DEFAULT NULL," \
+                   "`yiJiXueKe` varchar(40) DEFAULT NULL)" \
                    " ENGINE=MyISAM DEFAULT CHARSET=utf8"

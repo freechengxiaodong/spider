@@ -175,7 +175,7 @@ class YzwPipeline(object):
 
     def __make_sql(self, item):
         sql = f"""insert into `{self.settings.get('TABLE')}` 
-            (`id`, `招生单位`, `院校特性`, `院系所`, `专业`,`研究方向`,`学习方式`, `拟招生人数`, `备注`, `业务课一`, `业务课二`, `外语`, `政治`, `所在地`, `专业代码`,`指导老师`, `门类`, `一级学科` )
+            (`id`, `zhaoShengDanWei`, `yuanXiaoTeXing`, `yuanXiSuo`, `zhuanYe`,`fangXiang`,`fangShi`, `niZhaoShengRenShu`, `beiZhu`, `yeWuKeYi`, `yeWuKeEr`, `waiYu`, `zhengZhi`, `suoZaiDi`, `daiMa`,`daoShi`, `menLei`, `yiJiXueKe` )
              VALUES ('{item['id']}','{item['招生单位']}','{item['院校特性']}','{item['院系所']}','{item['专业']}','{item['研究方向']}',
              '{item['学习方式']}','{item['拟招生人数']}','{item['备注']}','{item['业务课一']}','{item['业务课二']}','{item['外语']}',
              '{item['政治']}','{item['所在地']}', '{item['专业代码']}', '{item['指导老师']}','{item['门类']}','{item['一级学科']}')"""
